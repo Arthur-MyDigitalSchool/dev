@@ -1,0 +1,131 @@
+
+/*
+ Déclarations générales
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "CourierPrime"; 
+    src: url("fonts/CourierPrime-Regular.ttf") format("truetype"); 
+    font-weight: 100; 
+}
+
+html,
+body {
+    min-height: 100%;
+    background-color: #fafafa;
+    margin: 0px;
+}
+
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.search_input {
+    color: #fafafa;
+}
+
+#nom {
+    font-weight: 100;
+    font-size: 35px;
+    margin: 15px 0px 5px 0px;
+}
+
+hr {
+    width: 60px;
+    margin-left: 0px;
+}
+
+#lien_bio {
+    color: rgb(30, 54, 117);
+}
+
+
+/* 
+ Couleurs utilisées : 
+ gris du fond principal : #fafafa
+ */
+
+#top_head {
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* 
+ Des classes que l'on va ajouter à plusieurs balises
+ */
+
+.wrapper {
+    width: calc(100% - 40px);
+    max-width: 935px;
+    margin: auto;
+    flex-wrap: wrap; /*  ATTENTION : ne définit pas le display comme "flex", il faut combiner cette classe avec la class ".is_flex"*/
+}
+
+.wrapper_footer {
+    width: calc(100% - 40px);
+    max-width: 1535px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.is_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex_33 {
+    flex: 0 0 33%;
+    width: 33%;
+}
+
+.flex_66 {
+    flex: 0 0 66%;
+    width: 66%;
+}
+
+.grid_item {
+    flex: 0 0 31.5%;
+    width: 31.5%;
+    margin-bottom: 15px;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.gris {
+    color: #9b9b9b;
+}
+
+.nobullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex_footer {
+    flex: 0 0 15%;
+}
+
+.bleu {
+    color: rgb(30, 54, 117);
+}
+
+.instabyfb {
+    flex: 0 0 20%;
+    margin-left: 0px;
+}
